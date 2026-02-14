@@ -1,10 +1,10 @@
 FROM n8nio/n8n:latest
 
 # Set working directory
-WORKDIR /home/node
+WORKDIR /data
 
-# Expose the port n8n runs on
+# Expose the port
 EXPOSE 5678
 
-# Use the full path to n8n or use npm start
-CMD ["npx", "n8n"]
+# Start n8n using the full npm command
+CMD ["npm", "start"]
