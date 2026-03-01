@@ -1,1 +1,4 @@
 FROM n8nio/n8n:latest
+
+ENV DB_POSTGRESDB_CONNECTION_TIMEOUT=60000
+ENV NODE_OPTIONS=--max-old-space-size=256
